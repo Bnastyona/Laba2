@@ -26,8 +26,11 @@ app.post('/tasks', function(req, res) {
 //res.sendStatus(201);
 //res.send({ name: 'Quests'});
 app.use('/', express.static(__dirname + '/static'));
+
 var arr = [ 
- res.send({name:'/task'})
+ app.get('/tasks',function(req,res){
+ res.send(taskName);
+})
 ];
 app.listen(3000);
 

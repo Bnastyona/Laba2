@@ -31,9 +31,9 @@ button.onclick = function createTask() {
     },
     body: JSON.stringify({ name: taskName })
   })
-  .then(response => response.text())
-  .then(text =>
-    document.getElementById('tasks').innerText = text
+  .then(response => response.arr())
+  .then(arr =>
+  document.getElementById('tasks').innerText = arr
   ); 
    //alert("JSON_creted");
    //tasks.appendChild(elem);
