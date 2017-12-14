@@ -1,1 +1,1 @@
-# node_tutorial
+# Laba 2
